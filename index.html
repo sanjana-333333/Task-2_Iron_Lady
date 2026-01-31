@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iron Lady – Enquiry Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Iron Lady – Enquiry Management</h1>
+    <p class="subtitle">Internal tool for managing learner enquiries</p>
+
+    <!-- Add Enquiry -->
+    <div class="card">
+        <h2>Add Learner Enquiry</h2>
+        <div class="form">
+            <input type="text" id="name" placeholder="Learner Name">
+            <input type="email" id="email" placeholder="Email">
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <select id="program">
+                <option value="">Select Program of Interest</option>
+                <option value="Leadership Development Program">Leadership Development Program</option>
+                <option value="Career Growth & Transition Program">Career Growth & Transition Program</option>
+                <option value="Communication & Confidence Program">Communication & Confidence Program</option>
+                <option value="Mentorship & Coaching Program">Mentorship & Coaching Program</option>
+                <option value="Workplace Readiness Program">Workplace Readiness Program</option>
+            </select>
+
+            <select id="status">
+                <option value="New">New</option>
+                <option value="Contacted">Contacted</option>
+                <option value="Enrolled">Enrolled</option>
+            </select>
+
+            <button onclick="addEnquiry()">Add Enquiry</button>
+        </div>
+    </div>
+
+    <!-- Enquiry List -->
+    <div class="card">
+        <h2>Learner Enquiries</h2>
+        <ul id="enquiryList" class="list"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
